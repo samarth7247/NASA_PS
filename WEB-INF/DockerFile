@@ -1,0 +1,6 @@
+ FROM tomcat:9.0-jdk11-openjdk
+ WORKDIR /webapps/nasa
+ COPY /webapps/nasa.rar /usr/local/tomcat/webapps/nasa/nasa.rar
+ EXPOSE 8008
+ CMD ["catalina.sh", "run"]
+ 
